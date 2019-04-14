@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeArtEng.GameControls</name>
+    </assembly>
+    <members>
+        <member name="T:CodeArtEng.GameControls.BallonText">
+            <summary>
+            Text component's composed from <see cref="T:CodeArtEng.GameControls.BallonChar"/>.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.BallonText.#ctor">
+            <summary>
+            Constructors
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.BallonText.Text">
+            <summary>
+            Control's Text
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.BallonText.ShowHint">
+            <summary>
+            Enable or disable display text for non highlighted characters.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.BallonText.HideChar(System.Int32)">
+            <summary>
+            Hide image and text for selected character.
+            </summary>
+            <param name="charIndex"></param>
+        </member>
+        <member name="M:CodeArtEng.GameControls.BallonText.HighlightChar(System.Int32)">
+            <summary>
+            Highlight selected character
+            </summary>
+            <param name="charIndex"></param>
+        </member>
+        <member name="M:CodeArtEng.GameControls.BallonText.Shuffle">
+            <summary>
+            Randomized characters
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.BallonText.Spacing">
+            <summary>
+            Get or set spacing between characters.
+            </summary>
+        </member>
+        <member name="F:CodeArtEng.GameControls.BallonText.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.BallonText.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CodeArtEng.GameControls.BallonText.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:CodeArtEng.GameControls.Button3D">
+            <summary>
+            Button with 3D image.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.Button3D.#ctor">
+            <summary>
+            Construcotr
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.Button3D.Text">
+            <summary>
+            Button's Text
+            </summary>
+        </member>
+        <member name="F:CodeArtEng.GameControls.Button3D.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.Button3D.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CodeArtEng.GameControls.Button3D.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:CodeArtEng.GameControls.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.Properties.Resources.GreenBallon_80">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.Properties.Resources.RedButton">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:CodeArtEng.GameControls.OptionButton">
+            <summary>
+            Option Button. Selectable button with highlight and hover colours.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.OptionButton.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.OptionButton.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.OptionButton.HoverEnabled">
+            <summary>
+            Enable / disable button color change when mouse hover.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.OptionButton.HighlightColor">
+            <summary>
+            Color of button when highlighted.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.OptionButton.HoverColor">
+             <summary>
+             Color of the button when mouse move over.
+             </summary>
+            <seealso cref="P:CodeArtEng.GameControls.OptionButton.HoverEnabled"/>
+        </member>
+        <member name="P:CodeArtEng.GameControls.OptionButton.BackColor">
+            <summary>
+            Color of button when not highlighted.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.OptionButton.Selected">
+            <summary>
+            Set button selection stated. Click to select.
+            </summary>
+        </member>
+        <member name="F:CodeArtEng.GameControls.OptionButton.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.OptionButton.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CodeArtEng.GameControls.OptionButton.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.RandomSequence.GenerateSequence(System.Int32,System.Int32)">
+            <summary>
+            Random sequence generator. Generate random sequence within a given range.
+            </summary>
+            <param name="startIndex">first index</param>
+            <param name="endIndex">last index</param>
+            <returns>Randomized sequence</returns>
+        </member>
+        <member name="M:CodeArtEng.GameControls.RandomSequence.GenerateSequence(System.Int32)">
+            <summary>
+            Random sequence genrator. Genrate random sequence for a given sequence size.
+            </summary>
+            <param name="count">Sequence size</param>
+            <returns>Randomized sequence.</returns>
+        </member>
+        <member name="T:CodeArtEng.GameControls.StarProgressBar">
+            <summary>
+            Progress bar in star image.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.StarProgressBar.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.StarProgressBar.Count">
+            <summary>
+            Number of stars
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.StarProgressBar.Value">
+            <summary>
+            Progress bar position. Number of stars highlighted.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.StarProgressBar.StarSize">
+            <summary>
+            Size in pixel for each star.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.StarProgressBar.DimmedImageIndex">
+            <summary>
+            Get or set image index when star is dimmed.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.StarProgressBar.HighlightedImageIndex">
+            <summary>
+            Get or set image index when star is highlighted.
+            </summary>
+        </member>
+        <member name="F:CodeArtEng.GameControls.StarProgressBar.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.StarProgressBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CodeArtEng.GameControls.StarProgressBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:CodeArtEng.GameControls.BallonChar">
+            <summary>
+            Character control with Ballon Image.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.BallonChar.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.BallonChar.Character">
+            <summary>
+            Get or set character for this instance.
+            </summary>
+        </member>
+        <member name="P:CodeArtEng.GameControls.BallonChar.StateIndex">
+            <summary>
+            State index. 0 = Gray, 1 = Green, 2 = Transparent
+            </summary>
+        </member>
+        <member name="F:CodeArtEng.GameControls.BallonChar.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CodeArtEng.GameControls.BallonChar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CodeArtEng.GameControls.BallonChar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

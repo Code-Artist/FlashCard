@@ -43,6 +43,9 @@
     <Reference Include="CodeArtEng.Extensions, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CodeArtEng.Extensions.1.3.0\lib\net452\CodeArtEng.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="CodeArtEng.GameControls, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodeArtEng.GameControls.1.2.0.0\lib\net40\CodeArtEng.GameControls.dll</HintPath>
+    </Reference>
     <Reference Include="NAudio, Version=1.8.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NAudio.1.8.5\lib\net35\NAudio.dll</HintPath>
     </Reference>
@@ -238,12 +241,6 @@
     <None Include="Resources\Clouds.png" />
     <Content Include="Resources\FlashCard4ULogo.ico" />
     <None Include="Resources\FlashCard4ULogo_100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\ClassLibraryNET\CodeArtEng\CodeArtEng.GameControls\CodeArtEng.GameControls\CodeArtEng.GameControls.csproj">
-      <Project>{F891BA1F-B5E2-47B0-918E-2D7A1EED16FB}</Project>
-      <Name>CodeArtEng.GameControls</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
