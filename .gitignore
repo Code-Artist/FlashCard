@@ -213,3 +213,10 @@ pip-log.txt
 
 #TortoiseHg (Mercurial)
 .hg*
+
+#Visual Studio
+.vs/
+
+## PROJECT SPECIFIC
+PrivateLessons/
+InnoSetup/*.exe

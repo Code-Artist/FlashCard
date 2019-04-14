@@ -53,7 +53,7 @@
             this.TopPanel.Controls.Add(this.Stars);
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
-            this.TopPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TopPanel.Margin = new System.Windows.Forms.Padding(4);
             this.TopPanel.Name = "TopPanel";
             this.TopPanel.Size = new System.Drawing.Size(1067, 114);
             this.TopPanel.TabIndex = 0;
@@ -65,7 +65,7 @@
             this.BtMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtMenu.Location = new System.Drawing.Point(941, 0);
-            this.BtMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtMenu.Margin = new System.Windows.Forms.Padding(4);
             this.BtMenu.Name = "BtMenu";
             this.BtMenu.Size = new System.Drawing.Size(131, 40);
             this.BtMenu.TabIndex = 0;
@@ -77,7 +77,7 @@
             this.panel1.Controls.Add(this.lbCardCounter);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1067, 26);
             this.panel1.TabIndex = 7;
@@ -113,7 +113,7 @@
             this.Stars.DimmedImageIndex = 0;
             this.Stars.HighlightedImageIndex = 1;
             this.Stars.Location = new System.Drawing.Point(99, 37);
-            this.Stars.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Stars.Margin = new System.Windows.Forms.Padding(5);
             this.Stars.Name = "Stars";
             this.Stars.Size = new System.Drawing.Size(748, 68);
             this.Stars.StarSize = 50;
@@ -124,10 +124,10 @@
             // 
             this.MainPicture.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPicture.Location = new System.Drawing.Point(296, 114);
-            this.MainPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MainPicture.Margin = new System.Windows.Forms.Padding(4);
             this.MainPicture.Name = "MainPicture";
             this.MainPicture.Size = new System.Drawing.Size(771, 362);
-            this.MainPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MainPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.MainPicture.TabIndex = 0;
             this.MainPicture.TabStop = false;
             // 
@@ -152,7 +152,7 @@
             // 
             this.CardLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CardLabel.Location = new System.Drawing.Point(0, 476);
-            this.CardLabel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CardLabel.Margin = new System.Windows.Forms.Padding(5);
             this.CardLabel.Name = "CardLabel";
             this.CardLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.CardLabel.ShowHint = true;
@@ -169,7 +169,7 @@
             this.Controls.Add(this.PuzzleHint);
             this.Controls.Add(this.CardLabel);
             this.Controls.Add(this.TopPanel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Layout_01";
             this.Size = new System.Drawing.Size(1067, 592);
             this.TopPanel.ResumeLayout(false);

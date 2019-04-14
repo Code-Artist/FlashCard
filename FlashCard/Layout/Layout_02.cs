@@ -1,12 +1,9 @@
-﻿using System;
+﻿using CodeArtEng.GameControls;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Windows.Forms;
-using CodeArtEng.GameControls;
 using System.Speech.Synthesis;
+using System.Windows.Forms;
 
 //ToDo: Design Word list
 
@@ -32,7 +29,7 @@ namespace FlashCard
             lbCardCounter.Text = string.Empty;
 
             BackColor = Color.Transparent;
-            Options = new OptionButton[] { optionButton1, optionButton2, optionButton3 , optionButton4};
+            Options = new OptionButton[] { optionButton1, optionButton2, optionButton3, optionButton4 };
             InitializeControls();
 
             WrongAnswerSound = TryLoadSound("WrongAnswer.mp3");
@@ -64,9 +61,9 @@ namespace FlashCard
         void Controller_LessonLoaded(object sender, EventArgs e)
         {
             tbResults.Rows.Clear();
-            if (Controller.Cards.Count < 3)
+            if (Controller.Cards.Count < Options.Length)
             {
-                MessageBox.Show("ERROR! Lesson must contains at least 3 cards.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ERROR! Lesson must contains at least " + Options.Length.ToString() + " cards.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Controller.ShowMenuDialog();
                 return;
             }
@@ -84,8 +81,7 @@ namespace FlashCard
         {
             foreach (Control ptrControl in this.optionPanel.Controls)
             {
-                if (ptrControl is CodeArtEng.GameControls.OptionButton)
-                    ptrControl.Text = string.Empty;
+                if (ptrControl is OptionButton) ptrControl.Text = string.Empty;
             }
             MainPicture.Image = null;
         }
@@ -126,7 +122,7 @@ namespace FlashCard
                     " / " + Controller.Cards.Count.ToString();
 
                 MainPicture.Image = SelectedCard.Image;
-                AnswerIndex = rand.Next(Options.Length); 
+                AnswerIndex = rand.Next(Options.Length);
                 Options[AnswerIndex].Tag = SelectedCard;
                 Options[AnswerIndex].Text = SelectedCard.Text.ToUpper();
                 Options[AnswerIndex].HighlightColor = Color.Lime;
@@ -137,7 +133,7 @@ namespace FlashCard
                 {
                     if (x != AnswerIndex)
                     {
-                        FlashCardItem randCard ;
+                        FlashCardItem randCard;
                         do
                         {
                             randCard = Controller.Cards.GetRandomCard();
@@ -160,7 +156,7 @@ namespace FlashCard
 
             if (CorrectAnswerSound != null) { CorrectAnswerSound.Dispose(); CorrectAnswerSound = null; }
             if (WrongAnswerSound != null) { WrongAnswerSound.Dispose(); WrongAnswerSound = null; }
-            
+
             this.Dispose();
         }
 
@@ -201,7 +197,7 @@ namespace FlashCard
 
         private void AlignOptionPanelToCenter()
         {
-            int newX =(OptionPanelFrame.Width - optionPanel.Width)/ 2;
+            int newX = (OptionPanelFrame.Width - optionPanel.Width) / 2;
             optionPanel.Left = (newX < 0) ? 0 : newX;
         }
 
